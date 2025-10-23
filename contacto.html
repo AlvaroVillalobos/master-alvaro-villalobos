@@ -2,6 +2,8 @@
 <HTML>
   <head>
     <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-av.png" type="image/png">
     <title>Página para contactar con Álvaro Villalobos SEO</title>
   </head>
   <body>
@@ -29,5 +31,19 @@
        Why do we use it?
        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
       </div>
+       <div>
+        <code>
+          Options +FollowSymLinks
+          RewriteEngine on
+          RewriteCond %{HTTP_HOST} *!^www*.dominio\.com [NC]
+          RewriteRule (.*) https://www.dominio.com/$1 [L,R=301]
+        </code>
+        <footer>
+            <address>
+            (C) <a href="mailto:villalobosarevalo@yahoo.es">Álvaro villalobos</a>
+            Madrid, Spain.
+            </address>
+        </footer>
+        </div>
   </body>  
 </HTML>
