@@ -27,7 +27,18 @@
         <!-- etiqueta dentro de una etiqueta, así NO-->
         <p>Esto es un <a> párrafo</p> </a> <!-- NO-->
         <!-- etiqueta dentro de una etiqueta, así SÍ-->
-        <p>Esto es <b style="color: rgb(15, 231, 47);">otro</b> <a href="index.html"> párrafo</p> </a> <!-- SÍ-->
+        <p>Esto es 
+            <b style="color: rgb(15, 231, 47);">otro</b> 
+            <a href="index.html"> párrafo
+<!--
+            </p> 
+            </a> 
+            Así no, tiene que ser así:
+        -->
+            </a></p>
+
+            <!-- Tienes el mismo fallo en /carpeta/archivo-carpeta.html-->
+
         <alvaro>esto es una etiqueta personalizada</alvaro>
         
         <div>esto es una etiqueta div <span>que tiene un span dentro</span></div>
