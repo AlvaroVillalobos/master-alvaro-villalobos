@@ -3,10 +3,20 @@
 <html>
   <head>
      <meta charset='UTF-8'>
+     <link rel="stylesheet" href="css/estilo.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <link rel="icon" href="imagenes/favicon-av.png" type="image/png">
      <title>Mi primer ejercicio del Máster</title>
      <link rel="preload" as="image" href="imagenes/html5-cheatsheet.jpeg">
+     <style>
+        .intro {
+    background: lightsteelblue;
+    color: white;
+    padding: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+     </style>
   </head>
  <body>
      <header>
@@ -15,18 +25,85 @@
      <li><a href="/index.html">Inicio</a></li>
         <li><a href="/sobre-mi.html">Sobre mi</a></li>
         <li><a href="/contacto.html">Contacto</a></li>
-        <li><a href="/carpeta/archivo-carpeta.html">Archivo dentro de carpeta</a></li>
-        <li><a href="/pagina-seo.html">Página SEO</a></li>
-        <li><a href="/carpeta-2/subfolder-2.html">Otro subfolder</a></li>
-        <li><a href="/pagina-minificada.html">Una página minificada</a></li>
-        <li><a href="https://www.bbc.com" target="_blank" rel="noopener">Más información</a></li>
+        <li><a href="/carpeta/archivo-carpeta.html">Carpeta</a></li>
+        <li><a href="/pagina-seo.html">SEO page</a></li>
+        <li><a href="/carpeta-2/subfolder-2.html">subfolder</a></li>
+        <li><a href="/pagina-minificada.html">minify</a></li>
+        <li><a href="https://www.bbc.com" target="_blank" rel="noopener">+ info</a></li>
      </ul>
      </nav>
      </header>
      <section id="bannerhome">
-        <h1 clas="h1small">Hola soy Álvaro - Y estoy probando cosas</h1>
+        <h1 class="intro">Hola soy Álvaro - Y estoy probando cosas</h1>
         
-        <p>Probando si reconoce los cambios Github desktop</p>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: left;">
+  <thead style="background-color: #f2f2f2;">
+    <tr>
+      <th>Selector</th>
+      <th>Ejemplo</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>*</td>
+      <td>*</td>
+      <td>Selecciona todos los elementos</td>
+    </tr>
+    <tr>
+      <td>element</td>
+      <td>p</td>
+      <td>Selecciona todos los elementos &lt;p&gt;</td>
+    </tr>
+    <tr>
+      <td>.class</td>
+      <td>.intro</td>
+      <td>Selecciona todos los elementos de la clase "intro"</td>
+    </tr>
+    <tr>
+      <td>#id</td>
+      <td>#ejemplo</td>
+      <td>Selecciona el elemento con la id="ejemplo"</td>
+    </tr>
+    <tr>
+      <td>Inline</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>element.class</td>
+      <td>p.intro</td>
+      <td>Selecciona todos los elementos &lt;p&gt; con la clase "intro"</td>
+    </tr>
+    <tr>
+      <td>.class1.class2</td>
+      <td>.ejemplo1.ejemplo2</td>
+      <td>Selecciona todos los elementos que tengan ambas clases "ejemplo1" y "ejemplo2" en su atributo "class"</td>
+    </tr>
+    <tr>
+      <td>.class1 .class2</td>
+      <td>.ejemplo1 .ejemplo2</td>
+      <td>Selecciona todos los elementos con la clase "ejemplo2" que sean descendientes de un elemento con la clase "ejemplo1"</td>
+    </tr>
+    <tr>
+      <td>element,element</td>
+      <td>div, p</td>
+      <td>Selecciona todos los elementos &lt;div&gt; y &lt;p&gt;</td>
+    </tr>
+    <tr>
+      <td>element element</td>
+      <td>div p</td>
+      <td>Selecciona todos los elementos &lt;p&gt; dentro de un elemento &lt;div&gt;</td>
+    </tr>
+    <tr>
+      <td>element&gt;element</td>
+      <td>div &gt; p</td>
+      <td>Selecciona todos los elementos &lt;p&gt; que sean hijos directos de un elemento &lt;div&gt;</td>
+    </tr>
+  </tbody>
+</table>
+        
+        <p class="intro">Probando si reconoce los cambios Github desktop</p>
         <div title="texto hover en este elemento">Probando un title dentro de un div y los diferentes tipos de comillas</div>
         <!-- etiqueta dentro de una etiqueta, así NO-->
         <p>Esto es un <a> párrafo</p> </a> <!-- NO-->
@@ -45,7 +122,7 @@
 
         <alvaro>esto es una etiqueta personalizada</alvaro>
         
-        <div>esto es una etiqueta div <span>que tiene un span dentro</span></div>
+        <div class="intro">esto es una etiqueta div <span>que tiene un span dentro</span></div>
         <div>
             <p>Esta es la imagen del HTML5</p>
             <image>
@@ -78,7 +155,7 @@
             <div>esto es un div, con <div>un div dentro</div></div>
             <p></p><span>esto es un span <div>con un div dentro</div></span><p>
         </div>
-        <section>
+        <section class="intro">
         <p>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</p>
         <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
         <p>1914 translation by H. Rackham</p>

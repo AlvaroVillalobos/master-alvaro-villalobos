@@ -1,0 +1,231 @@
+/* Ejercicio de medidas de Carlos Sánchez Donate */
+
+.cm {
+    background: #007bff;
+    width: 10cm;
+    height: 1cm;
+}
+
+.mm {
+    background: #00ff40;
+    width: 100mm;
+    height: 10mm;
+}
+
+.in {
+    background: #ff00a2;
+    width: 3.94in;
+    height: 43.94px;
+}
+
+.px {
+    background: yellow;
+    width: 378px;
+    height: 41px;
+}
+
+.pt {
+    background: grey;
+    width: 282pt;
+    height: 33pt;
+}
+
+.pc {
+    background: lightskyblue;
+    width: 23.5pc;
+    height: 2.5pc;
+}
+
+.absolutas {
+    display: flex;
+}
+
+.em {
+    background: blanchedalmond;
+    width: 23em;
+    height: 2em;
+}
+
+.rem {
+    background: blueviolet;
+    color: white;
+    height: 5vh;
+    width: 65.2vh;
+}
+
+.vh {
+    background: cadetblue;
+    width: 46vh;
+}
+
+.vw {
+    background: aqua;
+    width: 35.5vw;
+    height: 2.2vw;
+}
+
+.\% {
+    background: black;
+    color: white;
+    width: 35%;
+    height: 20%;
+}
+
+navul {
+    list-style: none;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* <--- esto lo alinea a la izquierda */
+  position: fixed;
+  width: 100%;
+  background: white;
+  margin: 0;
+  padding: 0 20px; /* opcional: deja un poco de espacio interior */
+  top: 0;
+  height: 50px;
+  gap: 25px; /* controla la separación entre elementos */
+  list-style: none; /* quita los puntos del listado */
+}
+
+body {
+    margin-top: 70px;
+}
+
+.tabla-maestra {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.tabla-maestra th,
+.tabla-maestra td {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  text-align: left;
+}
+
+.tabla-maestra th {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+}
+
+.tabla-maestra tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+#selector-individual {
+  border: 2px dashed red;
+  font-style: italic;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card p {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+.caja-posicionada {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background-color: #ffc107;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.etiqueta-posicionada {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #dc3545;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-size: 0.75em;
+}
+
+/* ======================================= */
+/* SELECTORES REQUERIDOS y PROPIEDADES BASE */
+/* ======================================= */
+
+/* 1. Selector de Elemento (Elemento) */
+body {
+    background: #f4f4f9; /* background */
+    font-family: Arial, sans-serif;
+    margin: 0; /* margin */
+    padding: 20px; /* padding */
+}
+
+/* 2. Selector de ID (ID) */
+#encabezado-id {
+    color: #007bff; /* color */
+    border-bottom: 2px solid #007bff;
+    font-size: 2em; /* Medida relativa: em (Multiplicador de la fuente del padre) */
+}
+
+/* 3. Selector de Clase (Clase) */
+.titulo-externo {
+    text-transform: uppercase;
+    margin-bottom: 15px; /* margin */
+}
+
+/* 4. Selector de Elemento con Clase (Una clase en un elemento concreto) */
+/* Aplica solo a elementos 'section' que tengan la clase 'seccion-principal' */
+section.seccion-principal {
+    background: #e9ecef; /* background */
+    padding: 15px 15px 5px 15px; /* padding */
+    border-radius: 5px;
+    width: 90vw; /* Medida relativa: vw (90% del ancho del viewport) */
+}
+
+/* 5. Selector con Múltiples Clases (Un elemento que tenga 2 clases en concreto) */
+/* Aplica solo a elementos que tengan *ambas* clases */
+.caja-especial.caja-doble {
+    background: #28a745; /* background */
+    color: white; /* color */
+    padding: 10px; /* padding */
+    margin: 20px 0; /* margin */
+    height: 100px; /* height */
+    width: 200px; /* width (Medida absoluta: px también aplica) */
+    font-size: 1.5rem; /* Medida relativa: rem (Multiplicador de la fuente raíz) */
+}
+
+/* 6. Selector de Descendencia (Una clase que descienda de un elemento con otra clase) */
+/* Aplica a cualquier elemento con la clase '.parrafo-hijo' que esté dentro
+   de cualquier elemento con la clase '.contenedor-padre' */
+.contenedor-padre .parrafo-hijo {
+    color: darkred; /* color */
+    margin-top: 10pt; /* Medida absoluta: pt (Puntos) */
+    font-size: 14px; /* Medida absoluta: px */
+}
+
+/* ======================================= */
+/* OTRAS PROPIEDADES y MEDIDAS */
+/* ======================================= */
+
+/* Ejemplo con Medida Absoluta (cm) */
+header {
+    background: #343a40;
+    color: white;
+    padding: 1cm; /* padding (Medida absoluta: cm) */
+}
+
+/* Ejemplo con Medida Relativa (%) */
+main.principal {
+    margin: 2% auto; /* margin (Medida relativa: %) */
+    min-height: 50vh; /* Medida relativa: vh (50% del alto del viewport) */
+}
+
+
