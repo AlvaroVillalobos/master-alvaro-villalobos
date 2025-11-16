@@ -71,6 +71,7 @@
     height: 20%;
 }
 
+
 navul {
     list-style: none;
 }
@@ -81,13 +82,24 @@ ul {
   justify-content: flex-start; /* <--- esto lo alinea a la izquierda */
   position: fixed;
   width: 100%;
-  background: white;
   margin: 0;
   padding: 0 20px; /* opcional: deja un poco de espacio interior */
   top: 0;
   height: 50px;
   gap: 25px; /* controla la separación entre elementos */
   list-style: none; /* quita los puntos del listado */
+}
+
+.cerrar.elemento {
+    position: fixed;
+    top: 8px;
+    right: 16px;
+    background: red;
+    padding: 12px;
+    border-radius: 100%;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
 }
 
 body {
@@ -211,15 +223,24 @@ section.seccion-principal {
     font-size: 14px; /* Medida absoluta: px */
 }
 
+/* Selector flex para alienear una imagen y un texto */
+.doscolumnas {
+
+display: flex;
+
+justify-content: space-between;
+
+}
+
 /* ======================================= */
 /* OTRAS PROPIEDADES y MEDIDAS */
 /* ======================================= */
 
 /* Ejemplo con Medida Absoluta (cm) */
 header {
-    background: #343a40;
-    color: white;
-    padding: 1cm; /* padding (Medida absoluta: cm) */
+    background: #f4f4f9;
+    /* color: white; */
+    padding: 0.5cm;
 }
 
 /* Ejemplo con Medida Relativa (%) */
