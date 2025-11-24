@@ -88,6 +88,33 @@ ul {
   height: 50px;
   gap: 25px; /* controla la separación entre elementos */
   list-style: none; /* quita los puntos del listado */
+  background-color: #6c757d;
+}
+
+ul li a {
+    color: white; 
+    text-decoration: none; /* Quitamos el subrayado por defecto */
+    border-bottom: 2px solid #024893; /* Añade una línea azul debajo */
+    padding-bottom: 2px; /* Espacio entre el texto y la línea */
+}
+
+div#imagenfalsa {
+    height: 600px;
+    width: 1000px;
+    background: url(/imagenes/css-imagen.jpg);
+    margin: auto;
+}
+
+section.medidas.relativas {
+    margin-bottom: 40px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #007bff;
+    /* Opción avanzada para asegurar que la caja de elementos se mida desde el borde */
+    box-sizing: border-box; 
 }
 
 .cerrar.elemento {
@@ -95,7 +122,7 @@ ul {
     top: 8px;
     right: 16px;
     background: red;
-    padding: 12px;
+    padding: 8px;
     border-radius: 100%;
     color: white;
     font-weight: 800;
@@ -104,6 +131,54 @@ ul {
 
 body {
     margin-top: 70px;
+}
+
+/* Selecciona todos los enlaces (a) cuyo atributo href EMPIEZA (^) por 'http' o 'https' */
+/* Enlaces internos */
+.enlaces-ejercicio a[href^="/"],
+.enlaces-ejercicio a[href^="./"],
+.enlaces-ejercicio a[href^="index.html"] {
+    color: #336699; /* azul tenue */
+    text-decoration: none;
+}
+
+/* Enlaces externos */
+.enlaces-ejercicio a[href^="http"] {
+    position: relative;
+    padding-right: 20px; /* espacio para el icono */
+}
+
+.enlaces-ejercicio a[href^="http"]::after {
+    content: "";
+    background-image: url('../imagenes/enlace-externo.png');
+    background-size: 14px 14px; /* tamaño deseado */
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+a {
+    color: red;
+}
+
+
+
+/* Para la imagen sin repetición */
+.imagen-no-repeat {
+    background-image: url("../imagenes/css-norepeat.jpg"); /* Cambiar la ruta */
+    background-repeat: no-repeat;
+    height: 300px; 
+    width: 75%;
+    background-position: center center;
+}
+
+/* Para la imagen con repetición (en header) */
+header {
+    /* ... */
+    background-image: url("../imagenes/fondo-repetido.jpg"); /* Cambiar la ruta */
+    /* ... */
 }
 
 .tabla-maestra {
@@ -248,5 +323,6 @@ main.principal {
     margin: 2% auto; /* margin (Medida relativa: %) */
     min-height: 50vh; /* Medida relativa: vh (50% del alto del viewport) */
 }
+
 
 
