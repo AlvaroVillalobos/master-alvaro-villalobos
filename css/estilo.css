@@ -72,7 +72,7 @@
 }
 
 
-navul {
+nav ul {
     list-style: none;
 }
 
@@ -109,14 +109,6 @@ section.medidas.relativas {
     margin-bottom: 40px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background: #007bff;
-    /* Opción avanzada para asegurar que la caja de elementos se mida desde el borde */
-    box-sizing: border-box; 
-}
-
 .cerrar.elemento {
     position: fixed;
     top: 8px;
@@ -127,10 +119,6 @@ body {
     color: white;
     font-weight: 800;
     cursor: pointer;
-}
-
-body {
-    margin-top: 70px;
 }
 
 /* Selecciona todos los enlaces (a) cuyo atributo href EMPIEZA (^) por 'http' o 'https' */
@@ -247,14 +235,6 @@ header {
 /* SELECTORES REQUERIDOS y PROPIEDADES BASE */
 /* ======================================= */
 
-/* 1. Selector de Elemento (Elemento) */
-body {
-    background: #f4f4f9; /* background */
-    font-family: Arial, sans-serif;
-    margin: 0; /* margin */
-    padding: 20px; /* padding */
-}
-
 /* 2. Selector de ID (ID) */
 #encabezado-id {
     color: #007bff; /* color */
@@ -324,5 +304,39 @@ main.principal {
     min-height: 50vh; /* Medida relativa: vh (50% del alto del viewport) */
 }
 
+/* Ejercicio -> elemento tenga de ancho el 100% de su elemento menos 40 píxeles*/
+.contenedor-seo {
+    width: calc(100% - 40px); /* 100% del padre menos 40px */
+    margin: 0 auto;           /* centramos el bloque */
+    background: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;   /* para que el padding no rompa el cálculo de ancho */
+}
 
+/* Ejercicio -> Añade una función max al ancho de un elemento */
+.caja-imagen img {
+    width: max(300px, 100%);
+    height: auto;
+}
 
+@font-face {
+  font-family: "Science Gothic";
+  src: url("/css/science-gothic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Aplicas la fuente a toda la página */
+body {
+  font-family: "Science Gothic", Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f9;
+    font-family: "Science Gothic", Arial, sans-serif;
+    margin: 10px 0 0 0; /* margen arriba para el menú fijo */
+    padding: 10px;
+    box-sizing: border-box;
+    
+}

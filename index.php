@@ -4,26 +4,23 @@
   <head>
      <meta charset='UTF-8'>
      <link rel="stylesheet" href="css/estilo.css">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="/css/fonts.css" rel="stylesheet">
+
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <link rel="icon" href="imagenes/favicon-av.png" type="image/png">
      <title>Mi primer ejercicio del Máster</title>
      <link rel="preload" as="image" href="imagenes/html5-cheatsheet.jpeg">
      <link rel="stylesheet" href="css/responsive.css">
-     <style>
-        .intro {
-    background: lightsteelblue;
-    color: white;
-    padding: 6px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
-     </style>
+     
   </head>
  <body>
      <header>
      <nav>
      <ul>
-     <li><a href="/index.html">Inicio</a></li>
+     <li><a href="/index.php">Inicio</a></li>
         <li><a href="/sobre-mi.html">Sobre mi</a></li>
         <li><a href="/contacto.html">Contacto</a></li>
         <li><a href="/carpeta/archivo-carpeta.html">Carpeta</a></li>
@@ -38,6 +35,10 @@
      </header>
      <section id="bannerhome">
         <h1 class="intro">Hola soy Álvaro - Y estoy probando cosas</h1>
+
+        <?php
+        echo "Mi primer mensaje en PHP desde el máster de SEO técnico";
+        ?>
         
         <p class="intro">Probando si reconoce los cambios Github desktop</p>
         <div title="texto hover en este elemento">Probando un title dentro de un div y los diferentes tipos de comillas</div>
@@ -46,7 +47,7 @@
         <!-- etiqueta dentro de una etiqueta, así SÍ-->
         <p>Esto es 
             <b style="color: rgb(15, 231, 47);">otro</b> 
-            <a href="index.html"> párrafo
+            <a href="index.php"> párrafo
 <!--
             </p> 
             </a> 

@@ -1,6 +1,11 @@
 <head>
 <meta charset='UTF-8'>
 <link rel="stylesheet" href="css/estilo.css">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="/css/fonts.css" rel="stylesheet">
+
 <html lang="es">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Página SEO</title>
@@ -47,7 +52,7 @@
      <header>
      <nav>
      <ul>
-     <li><a href="/index.html">Inicio</a></li>
+     <li><a href="/index.php">Inicio</a></li>
         <li><a href="/sobre-mi.html">Sobre mi</a></li>
         <li><a href="/contacto.html">Contacto</a></li>
         <li><a href="/carpeta/archivo-carpeta.html">Carpeta</a></li>
@@ -60,18 +65,36 @@
      <div class="cerrar elemento">X</div>
      </nav>
      </header>
-      <div>
-       <h1>Esta es la página SEO</h1>
-            <image>
-            <h2><p>Y esta una imagen 757 x 454 px con preload</p></h2>
-            </image>
-            <img src="imagenes/seo-google.jpg" width="757" height="454" title="SEO en Google" alt="Imagen de ascendencia SEO en Google">   
-            </image>     
-      <div><image>
-            <h2><p>Y esta una imagen PNG 1601 x 901 px SIN preload y con lazy loading</p></h2>
-            </image>
+      <div class="contenedor-seo">
+
+    <h1>Esta es la página SEO</h1>
+
+    <!-- Imagen 1 con preload -->
+    <div class=".contenedor-seo">
+        <h2>Y esta es una imagen 757 x 454 px con preload</h2>
+        <img src="imagenes/seo-google.jpg"
+             width="757"
+             height="454"
+             title="SEO en Google"
+             alt="Imagen de ascendencia SEO en Google">
+    </div>
+
+    <!-- Imagen 2 con lazy loading -->
+    <div class="caja-imagen">
+        <h2>Y esta es una imagen PNG 1601 x 901 px SIN preload y con lazy loading</h2>
+        <img src="imagenes/google-bot.png"
+             loading="lazy"
+             width="1601"
+             height="901"
+             title="Bot de Google"
+             alt="Un robot de Google sonriente">
+    </div>
+
+</div>
+
+
             <img src="imagenes/google-bot.png" loading="lazy" width="1601" height="901" title="Bot de Google" alt="Un robot de Google sonriente">   
-            </image></dic>      
+            </image>     
            </div>
      <section id="bannerhome">
         <h1 clas="h1small">Esta es la prueba de un página SEO</h1>
