@@ -1,35 +1,6 @@
- <!DOCTYPE html>
- <html lang="es">
- <HTML>
-  <head>
-    <meta charset='UTF-8'>
-    <link rel="stylesheet" href="/css/estilo.css">
-
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="/css/fonts.css" rel="stylesheet">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/imagenes/favicon-av.png" type="image/png">
-    <title>SUBfolder</title>
-  </head>
-  <body>
-    <header>
-        <nav>
-  <ul>
-     <li><a href="/index.php">Inicio</a></li>
-        <li><a href="/sobre-mi.html">Sobre mi</a></li>
-        <li><a href="/contacto.html">Contacto</a></li>
-        <li><a href="/carpeta/archivo-carpeta.html">Carpeta</a></li>
-        <li><a href="/pagina-seo.html">SEO page</a></li>
-        <li><a href="/selectores.html">Selectores</a></li>
-        <li><a href="/carpeta-2/subfolder-2.html">subfolder</a></li>
-        <li><a href="/pagina-minificada.html">minify</a></li>
-        <li><a href="https://www.bbc.com" target="_blank" rel="noopener">+ info</a></li>
-     </ul>
-     <div class="cerrar elemento">X</div>
-</nav>
-    </header>
+<?php
+ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
+?>
   <section id="bannerhome">
     <h1 clas="h1small">Esto es OTRO SUBfolder</h1>
     <p>Probando como crear una estructura lógica de SUBfolders</p>
@@ -65,12 +36,11 @@
     </section>
    <div>
     <footer>
-    <address>
-    (C) <a href="mailto:villalobosarevalo@yahoo.es">Álvaro villalobos</a>
-    Madrid, Spain.
-    </address>
-    </footer>
-    </div>
-</body>
-<!-- esto es un comentario -->
-</html>
+            <address>
+            (C) <a href="mailto:villalobosarevalo@yahoo.es">Álvaro Villalobos -> especialista SEO</a>
+            Madrid, Spain.
+            </address>
+        </footer>
+        </div>
+  </body>  
+</HTML>
