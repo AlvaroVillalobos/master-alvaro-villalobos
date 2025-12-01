@@ -1,12 +1,71 @@
 <?php
  include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
-     <section id="bannerhome">
-        <h1 class="intro">Hola soy Álvaro - Y estoy probando cosas</h1>
 
-        <?php
-        echo "Mi primer mensaje en PHP desde el máster de SEO técnico";
-        ?>
+<?php
+ echo $_SERVER['DOCUMENT_ROOT'];
+ $Variable = 'Variable';
+ echo " <p>-> Hola profesores, estoy metiendo mi primera frase, y ahora voy a probar una $Variable";
+ 
+ echo "<p>Es muy loco llamar a una $Variable con su propio nombre: $Variable";
+
+  ?>
+
+   <section id="bannerhome">
+      <h1 class="intro">Hola soy Álvaro - Y estoy probando cosas</h1>
+
+<?php
+$nota = 95;
+
+if ($nota >= 90) {
+    echo "Excelente";
+} elseif ($nota >= 50) {
+    echo "Aprobado";
+} else {
+    echo "Suspenso";
+}
+
+echo "<br>";
+echo "La nota es: $nota";
+
+echo "<br><br>";
+?>
+
+<?php
+$nota = 70;
+
+if ($nota >= 90) {
+    echo "Excelente";
+} elseif ($nota >= 50) {
+    echo "Aprobado";
+} else {
+    echo "Suspenso";
+}
+
+echo "<br>";
+echo "La nota es: $nota";
+
+echo "<br><br>";
+?>
+
+<?php
+$nota = 30;
+
+if ($nota >= 90) {
+    echo "Excelente";
+} elseif ($nota >= 50) {
+    echo "Aprobado";
+} else {
+    echo "Suspenso";
+}
+
+echo "<br>";
+echo "La nota es: $nota";
+
+?>
+
+
+
         
         <p class="intro">Probando si reconoce los cambios Github desktop</p>
         <div title="texto hover en este elemento">Probando un title dentro de un div y los diferentes tipos de comillas</div>
