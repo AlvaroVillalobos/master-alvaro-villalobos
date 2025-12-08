@@ -11,3 +11,6 @@ Si, estoy con MAC. Perdona, que no había visto el comentario.
 Hola, Carlos y Roberto.
 No recibo feedback de mis ejercicios, ni comentarios en el readme.
 ¿Doy oor hecho que está todo perfecto oexiste algún problema con mi repositorio y conexión vía Github?.
+
+## 08/12/2025 Ejercicios corregidos
+Está todo genial, perdona el lío
