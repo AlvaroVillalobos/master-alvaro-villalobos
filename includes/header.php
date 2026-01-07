@@ -9,11 +9,34 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="/css/fonts.css" rel="stylesheet">
 
+     <?php
+
+     include_once $_SERVER['DOCUMENT_ROOT']. '/includes/functions.php';
+
+     ?>
+
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <?php
+// llamadas a include o código PHP
+
+// archivo de funciones en ruta absoluta del servidor:
+include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
+?>
      
-     <link rel="icon" href="/imagenes/favicon-av.png" type="image/png">
-     
-     <title>Mi primer ejercicio del Máster</title>
+     <title>
+         <?php
+         
+      if (empty($titulo)){  
+         echo "Proyecto Máster";
+      }   
+      else{
+         echo $titulo;
+      } 
+
+         ?>
+         
+      </title>
      
      <link rel="preload" as="image" href="/imagenes/html5-cheatsheet.jpeg">
      
@@ -24,15 +47,23 @@
      <header>
      <nav>
      <ul>
-        <li><a href="/index.php">Inicio</a></li>
-        <li><a href="/sobre-mi.php">Álvaro</a></li>
-        <li><a href="/contacto.php">Contacto</a></li>
-        <li><a href="/carpeta/archivo-carpeta.php">Carpeta</a></li>
-        <li><a href="/pagina-seo.html">SEO page</a></li>
-        <li><a href="/selectores.php">Selectores</a></li>
-        <li><a href="/carpeta-2/subfolder-2.php">subfolder</a></li>
-        <li><a href="/pagina-minificada.php">minify</a></li>
-        <li><a href="https://www.bbc.com" target="_blank" rel="noopener">+ info</a></li>
+        <li><a href="/index">Inicio</a></li>
+        <li><a href="/sobre-mi">Álvaro</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+        <li><a href="/carpeta/archivo-carpeta">VAR folder</a></li>
+        <li><a href="/pagina-seo">SEO page</a></li>
+        <li><a href="/selectores">Selectores</a></li>
+        <li><a href="/carpeta-2/subfolder-2">subfolder</a></li>
+        <li><a href="/pagina-minificada">minify</a></li>
+        <li class="dropdown">
+    <a href="#" class="dropbtn" onclick="return false;">+ Ejercicios ▾</a>
+    <ul class="dropdown-content">
+        <li><a href="/ejercicios/ejercicios-html">HTML</a></li>
+        <li><a href="/ejercicios/ejercicios-css">CSS</a></li>
+        <li><a href="/ejercicios/ejercicios-php">PHP</a></li>
+        <li><a href="/ejercicios/ejercicios-javascript">JavaScript</a></li>
+    </ul>
+</li>
      </ul>
      <div class="cerrar elemento">X</div>
      </nav>
