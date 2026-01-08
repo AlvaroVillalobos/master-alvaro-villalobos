@@ -3,17 +3,13 @@ $titulo = "Javascript Ejercicios Javascript - Máster SEO técnico"; // Variable
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
-<section class="contenedor-ejercicios">
+<section class="contenedor-ejercicios" style="padding: 20px; max-width: 900px;">
     <h1>Javascript - Zona de Pruebas: Ejercicios Javascript</h1>
     <p>Espacio dedicado al desarrollo de mecanismos SEO con Javascript.</p>
     
     <hr>
     
     <div id="area-trabajo">
-        <?php
-$titulo = "Ejercicios JavaScript";
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
-?>
 
 <div style="padding: 20px;">
     <h1>Ejercicio 07-05: Variables JS</h1>

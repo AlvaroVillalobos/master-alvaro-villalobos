@@ -372,3 +372,8 @@ li.dropdown {
 li.dropdown:hover .dropdown-content {
     display: block;
 }
+/* Forzar color negro en los enlaces de la zona de ejercicios */
+.contenedor-ejercicios ul li a {
+    color: black;
+    border-bottom-color: black; /* Para que la línea de subrayado también sea negra */
+}
