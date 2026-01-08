@@ -1,8 +1,0 @@
-RewriteEngine On
-
-# Si el archivo solicitado no es un directorio (-d)
-RewriteCond %{REQUEST_FILENAME} !-d
-# Y si el archivo solicitado (con .php añadido) existe (-f)
-RewriteCond %{REQUEST_FILENAME}.php -f
-# Entonces, reescribe la URL añadiendo .php al final de manera interna
-RewriteRule ^(.*)$ $1.php [L]
