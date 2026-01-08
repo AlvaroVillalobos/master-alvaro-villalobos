@@ -40,7 +40,10 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
      
      <link rel="preload" as="image" href="/imagenes/html5-cheatsheet.jpeg">
      
-     <link rel="stylesheet" href="/css/responsive.css">
+     <link rel="stylesheet" href="/css/estilo.css">
+
+     <link rel="icon" type="image/x-icon" href="/imagenes/favicon-av.png">
+     <link rel="icon" type="image/png" href="/imagenes/favicon-av.png">
      
   </head>
  <body>

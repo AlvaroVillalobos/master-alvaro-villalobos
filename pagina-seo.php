@@ -1,4 +1,9 @@
 <head>
+  <?php
+ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
+?>
+
+<?php;
 <meta charset='UTF-8'>
 <link rel="stylesheet" href="css/estilo.css">
 
@@ -49,22 +54,6 @@
   <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
-     <header>
-     <nav>
-     <ul>
-     <li><a href="/index.php">Inicio</a></li>
-        <li><a href="/sobre-mi.php">Sobre mi</a></li>
-        <li><a href="/contacto.php">Contacto</a></li>
-        <li><a href="/carpeta/archivo-carpeta.php">Carpeta</a></li>
-        <li><a href="/pagina-seo.html">SEO page</a></li>
-        <li><a href="/selectores.php">Selectores</a></li>
-        <li><a href="/carpeta-2/subfolder-2.php">subfolder</a></li>
-        <li><a href="/pagina-minificada.html">minify</a></li>
-        <li><a href="https://www.bbc.com" target="_blank" rel="noopener">+ info</a></li>
-     </ul>
-     <div class="cerrar elemento">X</div>
-     </nav>
-     </header>
       <div class="contenedor-seo">
 
     <h1>Esta es la página SEO</h1>
