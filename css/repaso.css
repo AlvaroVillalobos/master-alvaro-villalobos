@@ -1,0 +1,22 @@
+/* 1. Estilo base de la caja: borde negro y fondo gris claro */
+.caja-basica {
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #f0f0f0; /* Gris muy clarito */
+    margin-top: 20px;
+}
+
+/* 2. Estilo para el botón (simple) */
+button {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* 3. Clase que añadiremos con Javascript */
+/* Cuando JS active esta clase, el fondo se pondrá amarillo */
+.modo-activo {
+    background-color: yellow;
+    border-color: red;
+    color: black;
+}

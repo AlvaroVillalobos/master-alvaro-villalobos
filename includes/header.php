@@ -65,6 +65,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
         <li><a href="/ejercicios/ejercicios-css">CSS</a></li>
         <li><a href="/ejercicios/ejercicios-php">PHP</a></li>
         <li><a href="/ejercicios/ejercicios-javascript">JavaScript</a></li>
+        <li><a href="/ejercicios/repaso-general.php">Repaso</a></li>
     </ul>
 </li>
      </ul>
