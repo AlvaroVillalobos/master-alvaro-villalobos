@@ -12,7 +12,7 @@
     <div>
      <div class="calendario máster SEO 1">
       <image>
-     <img src="/imagenes/calendario-master-01.jpg" alt="Calendario del máster SEO 1" width="1000" height="500">
+     <img src="/imagenes/calendario-2026.png" alt="Calendario del máster SEO 1" width="1000" height="500">
      </image>
     </div>
         <div><p>Este es un ejemplo de una página de contacto. What is Lorem Ipsum?
