@@ -1,23 +1,363 @@
 /*
-Theme Name. asdrubal
+Theme Name: Asdrubal
 Author: Álvaro Villalobos
 Description: Tema personalizado durante el Máster de SEO técnico
-Versión: 1.0.0
+Version: 1.0.0
 */
 
+/* --- ESTILOS AGENCIA MARKETING --- */
+
 body {
-    font-family: sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4; /* Fondo gris muy claro para que no sea blanco nuclear */
 }
 
-nav ul {
-    list-style-type: none;
+/* Cabecera Principal */
+.site-header {
+    background-color: #1a1a1a; 
+    padding: 1.2rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra más pronunciada */
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+
+.container-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logotipo */
+.logo a {
+    text-decoration: none;
+    font-size: 1.8rem; /* Un poco más grande */
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.logo .highlight {
+    color: #00E6F2; 
+}
+
+/* Menú */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #00E6F2;
+}
+
+/* Botón destacado (CTA) */
+.cta-button a {
+    background-color: #00E6F2;
+    color: #0f0f0f !important; 
+    padding: 10px 25px;
+    border-radius: 50px; /* Bordes redondeados modernos */
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 230, 242, 0.3); /* Efecto glow */
+}
+
+.cta-button a:hover {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* --- ESTILOS HOME (GRID SERVICIOS) --- */
+
+.home-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Título "Qué Hacemos" estilo Sticker */
+.intro-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: serif; /* Fuente con serifa como la imagen */
+}
+
+.sticker-wrapper {
+    display: inline-block;
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.bubble-white {
+    background: white;
+    border: 1px solid #333;
+    padding: 5px 30px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+    margin-right: -20px; /* Superposición */
+}
+
+.bubble-dark {
+    background: #112d32; /* Verde oscuro de la imagen */
+    color: #ffd700; /* Amarillo */
+    padding: 10px 30px;
+    border-radius: 5px 50px 50px 50px; /* Forma irregular */
+    transform: rotate(-3deg);
+    display: inline-block;
+}
+
+/* GRID SYSTEM */
+.services-grid {
+    display: grid;
+    /* Esto crea 3 columnas automáticas que bajan a 1 en móvil */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px; /* Espacio entre tarjetas */
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #112d32;
+    font-family: serif; /* Toque elegante */
+}
+
+/* Iconos circulares */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    background-color: #eee;
+}
+/* Colores de fondo para simular la imagen */
+.bg-pink { background-color: #ffe0f0; }
+.bg-yellow { background-color: #fffacd; }
+.bg-red { background-color: #ffcccb; }
+.bg-dark { background-color: #2c3e50; }
+.bg-pink-light { background-color: #ffb6c1; }
+.bg-yellow-light { background-color: #ffffcc; }
+.bg-dark-red { background-color: #8b0000; }
+.bg-yellow-border { border: 2px solid gold; background: transparent; }
+.bg-purple { background-color: #e6e6fa; }
+
+
+/* LISTAS CON FLECHA ROJA */
+.service-item ul {
+    list-style: none; /* Quitamos los puntos feos */
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.service-item li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* La flecha roja mágica */
+.service-item li::before {
+    content: "→"; /* Flecha */
+    color: #ff4d4d; /* Color rojo salmón */
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* --- ESTILOS SOBRE NOSOTROS (NEXT LEVEL) --- */
+
+.about-container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    overflow: hidden; /* Evita scroll horizontal por efectos */
+}
+
+.hero-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Tipografía y Textos */
+.gradient-text {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #1a1a1a 0%, #00E6F2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.content-body p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Botón con Glow */
+.btn-glow {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background: #1a1a1a;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 230, 242, 0.3);
+    transition: transform 0.3s ease;
+}
+.btn-glow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 230, 242, 0.5);
+}
+
+/* --- ZONA VISUAL (MAGIA CSS) --- */
+.hero-visuals {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Círculo borroso de fondo (Ambient Light) */
+.blur-circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, #00E6F2, #ff00cc);
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Estilo Base Glassmorphism */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+
+/* Tarjeta 1: Analytics (Simulación Laptop) */
+.card-analytics {
+    width: 320px;
+    height: 200px;
+    top: 10%;
+    left: 10%;
+    z-index: 2;
+}
+.card-header { display: flex; gap: 8px; margin-bottom: 20px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.chart-line {
+    width: 100%;
+    height: 4px;
+    background: #e0e0e0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.chart-line::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; height: 100%; width: 70%;
+    background: #00E6F2;
+}
+.stat-row { display: flex; justify-content: space-between; font-size: 1.2rem; }
+
+/* Tarjeta 2: Rankings SEO */
+.card-ranking {
+    width: 220px;
+    bottom: 15%;
+    right: 5%;
+    z-index: 3;
+    background: rgba(26, 26, 26, 0.9); /* Oscura */
+    color: white;
+}
+.card-ranking h4 { margin: 0 0 15px 0; color: #00E6F2; }
+.card-ranking ul { list-style: none; padding: 0; margin: 0; }
+.card-ranking li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.9rem;
+}
+.rank { font-weight: bold; color: #00E6F2; }
+
+/* Elemento 3: Esfera Branding */
+.sphere-3d {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at 30% 30%, #ff00cc, #66004d);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    box-shadow: inset -10px -10px 20px rgba(0,0,0,0.5), 10px 20px 30px rgba(0,0,0,0.3);
+}
+
+/* Animaciones de Flotación */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating-slow { animation: float 6s ease-in-out infinite; }
+.floating-fast { animation: float 4s ease-in-out infinite; }
+.floating-mid { animation: float 5s ease-in-out infinite reverse; }
+
+/* Responsive móvil */
+@media (max-width: 768px) {
+    .hero-split { grid-template-columns: 1fr; text-align: center; }
+    .hero-visuals { height: 400px; margin-top: 40px; transform: scale(0.8); }
+    .gradient-text { font-size: 2.5rem; }
 }

@@ -1,8 +1,12 @@
-<hr>
-    <footer>
-        <p>&copy; <?php echo date('Y'); ?> Agencia de Marketing. Todos los derechos reservados.</p>
-    </footer>
-
-    <?php wp_footer(); ?> 
-</body>
-</html>
+        </footer>
+            <address class="intro">
+               (C) <a href="mailto:villalobosarevalo@yahoo.es">Álvaro Villalobos -> especialista SEO</a><br />
+               Madrid, Spain.
+            </address>
+                <p>
+                   <?php echo "página desarrollada con lenguaje PHP"; ?>
+                </p>
+                <?php wp_footer();?>
+        </footer>
+  </body>  
+</HTML> 
