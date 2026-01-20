@@ -1,0 +1,1 @@
+<h1><?php echo "H1 de prueba dentro de home.php"; ?></h1>

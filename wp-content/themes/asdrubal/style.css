@@ -1,0 +1,23 @@
+/*
+Theme Name. asdrubal
+Author: Álvaro Villalobos
+Description: Tema personalizado durante el Máster de SEO técnico
+Versión: 1.0.0
+*/
+
+body {
+    font-family: sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
