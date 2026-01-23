@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 
+<?php 
+// Busca en: /tu-tema/plantillas/display-posts/card-posts.php
+// Llamamos al archivo que tiene el Loop y la Query
+get_template_part( 'plantillas/trespost' );
+?>
+
 <main class="home-container">
 
     <section class="intro-title">

@@ -1,6 +1,9 @@
 <?php
 include_once 'header.php';?>
 
+        <!-- incluir campo personalizado'; -->
+        <div class="descripcion_corta"><?php the_field('descripcion_corta'); ?></div> <br>
+
 <div clas="generico">
 
    <h1>
