@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+$titulo = "Ejercicios de metaetiquetas - Máster SEO";
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
+?>
 <html lang="es">
     <head>
         <meta charset='UTF-8'>
@@ -88,8 +92,7 @@ OPEN GRAPH PROTOCOL TWITTER ----------------------------------------------------
             o cookies, aparezca como la descripción de mi página en la SERP.
         </p>
 </section>
-    <footer>
-
-    </footer>
-
+<?php
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';
+?>
 </body>    

@@ -1,8 +1,11 @@
 RewriteEngine On
+RewriteBase /
 
-# Si el archivo solicitado no es un directorio (-d)
+# Si entran con slash, redirigir a la versión limpia (Evita error 500 y duplicidad)
 RewriteCond %{REQUEST_FILENAME} !-d
-# Y si el archivo solicitado (con .php añadido) existe (-f)
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Si el archivo .php existe, cargarlo internamente
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
-# Entonces, reescribe la URL añadiendo .php al final de manera interna
 RewriteRule ^(.*)$ $1.php [L]
