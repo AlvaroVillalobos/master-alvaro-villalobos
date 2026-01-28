@@ -11,7 +11,10 @@ $url_sin_string = $protocol . '://' . $_SERVER['HTTP_HOST'] . strtok($_SERVER["R
 <meta charset="UTF-8" />
 <meta name="robots" content="">
 
-<link rel="canonical" href="<?php the_field('canonical', $term) ?>">
+<link rel="canonical" href="<?php if (get_field ('canonical', $term))
+{the_field('canonical', $term);}
+else {echo $url_sin_string;}
+                              ?>">
 
 <!--Auromatismo para añadir Metatags Personalizados con Plug In ACF-->            
             <?php the_field('custom_meta', $term) ?>
@@ -42,8 +45,9 @@ $url_sin_string = $protocol . '://' . $_SERVER['HTTP_HOST'] . strtok($_SERVER["R
 
             <meta property="og:url" content="<?php the_field('canonical', $term) ?>">
             <meta property="og:site_name" content="">
-            <meta property="og:image" content="">
-            <meta property="og:image:width" content="">
+            <meta property="og:image" content="<?php the_field('og_image');?>">
+            <meta property="og:image:alt" content="<?php the_field('title', $term );?>">
+            <meta property="og:image:width" content="">        
             <meta property="og:image:height" content="">
 
             <meta property="twitter:card" content="summary_large_image">
@@ -67,7 +71,7 @@ $url_sin_string = $protocol . '://' . $_SERVER['HTTP_HOST'] . strtok($_SERVER["R
             the_field('og_title', $term);
             } else {
             the_field('title', $term);}?>"> 
-            <meta property="twitter:image" content="">
+            <meta property="twitter:image" content="<?php the_field('og_image');?>">
 
             <meta property="rating" content="adult">
 
