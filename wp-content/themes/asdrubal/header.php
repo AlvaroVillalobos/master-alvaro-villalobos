@@ -26,8 +26,9 @@
                     <li><a href="<?php echo home_url('/sobre-nosotros'); ?>">Sobre Nosotros</a></li>
                     <li><a href="<?php echo home_url('/sobre-mi'); ?>">Sobre Mi</a></li>
                     <li><a href="<?php echo home_url('/articulo/category/seo/'); ?>">SEO</a></li> 
-                    <li><a href="<?php echo home_url('/articulo/category/sem/'); ?>">SEM</a></li> 
-                    <li><a href="<?php echo home_url('/articulo/category/analitica-cro/'); ?>">CRO</a></li> 
+                    <li><a href="<?php echo home_url('/articulo/category/sem/'); ?>">SEM</a></li>
+                    <li><a href="<?php echo home_url('/articulo/category/analitica-cro/'); ?>">CRO</a></li>
+                    <li><a href="<?php echo home_url('/nuevo'); ?>">new</a></li> 
                     <li class="cta-button"><a href="<?php echo home_url('/contacto'); ?>">Contacto</a></li>
                 </ul>
             </nav>
