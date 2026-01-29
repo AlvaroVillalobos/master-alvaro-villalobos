@@ -7,9 +7,19 @@ $url_sin_string = $protocol . '://' . $_SERVER['HTTP_HOST'] . strtok($_SERVER["R
 
 <!--Metaetiquetas del Máster de SEO técnico-->
 
+<!--AUTOMATIZACIÓN metarobots-->
+<?php 
+$metarobots_checked_values = get_field( 'metarobots', $term ); 
+// 2. Comprobamos si hay valores seleccionados
+if ( $metarobots_checked_values ) : ?>
+      <meta name="robots" content="<?php echo implode( ', ', $metarobots_checked_values ); ?>">
+<?php endif; ?>
+
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8" />
-<meta name="robots" content="">
+<meta name="robots" content=""> 
 
 <link rel="canonical" href="<?php if (get_field ('canonical', $term))
 {the_field('canonical', $term);}
