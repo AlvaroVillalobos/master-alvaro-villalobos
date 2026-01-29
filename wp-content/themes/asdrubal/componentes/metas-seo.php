@@ -15,7 +15,15 @@ if ( $metarobots_checked_values ) : ?>
       <meta name="robots" content="<?php echo implode( ', ', $metarobots_checked_values ); ?>">
 <?php endif; ?>
 
-
+<?php if ( in_category('coches') ) : 
+    $marca = get_field('marca', $term);
+    $motor = get_field('tipo_de_combustible', $term);
+    $metades_coches = "Mi experiencia con un " . $marca . " " . $motor;
+?>
+    <meta name="description" content="<?php echo $metades_coches; ?>">
+<?php else : ?>
+    <meta name="description" content="<?php echo get_field('metadescription', $term) ?: get_field('title', $term); ?>">
+<?php endif; ?>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8" />
