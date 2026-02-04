@@ -4,6 +4,36 @@
     <div id="una-capa">
       <h1>Información sobre Álvaro Villalobos: especialista SEO</h1>
     </div>  
+  
+    
+  <!-- Imagen técnica SEO para evitar la deformación de imágenes cuando forzamos dimensiones -->
+  <div>
+    <p>1. Imagen con object-fit</p>
+    <img 
+    src="/imagenes/02-bucarest-ok.jpg" 
+    alt="Imagen de Bucarest, Rumanía en alt." 
+    title="Imagen de Bucarest, Rumanía en title" 
+    height="300" 
+    style="width: 100%; object-fit: cover; object-position: center;">
+  </div>
+  <br> 
+   <!-- Imagen mediante Background CSS -->
+  <div>
+    <p>2. Imagen mediante Background CSS</p>
+    <div class="img-background-seo" role="img" aria-label="Vista de Bucarest desde fondo CSS"></div>
+
+    <style>
+    .img-background-seo {
+    width: 100%;
+    height: 300px;
+    background-image: url('/imagenes/02-bucarest-ok.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+   </style>
+  </div>
+
     <section class="medidas">
       <h2>Medidas absolutas</h2>
       <div class="absolutas sizes">
