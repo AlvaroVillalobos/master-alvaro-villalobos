@@ -44,7 +44,37 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
      <link rel="icon" type="image/x-icon" href="/imagenes/favicon-av.png">
      <link rel="icon" type="image/png" href="/imagenes/favicon-av.png">
-     
+
+   <!-- SEO básico -->
+<title>Máster SEO Técnico | HTML, CSS, PHP y JS</title>
+<meta name="description" content="Ejercicios y prácticas del Máster SEO Técnico: HTML, CSS, PHP y JavaScript. Desarrollo web orientado a SEO técnico y rendimiento." />
+<link rel="canonical" href="http://localhost:8888/index" />
+
+<!-- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) -->
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Máster SEO Técnico" />
+<meta property="og:title" content="Máster SEO Técnico | HTML, CSS, PHP y JS" />
+<meta property="og:description" content="Ejercicios y prácticas del Máster SEO Técnico: HTML, CSS, PHP y JavaScript. Desarrollo web orientado a SEO técnico y rendimiento." />
+<meta property="og:url" content="http://localhost:8888/index" />
+<meta property="og:image" content="/imagenes/master-seo-gato.png" />
+<meta property="og:image:secure_url" content="/imagenes/master-seo-gato.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1536" />
+<meta property="og:image:height" content="1024" />
+<meta property="og:image:alt" content="Máster SEO Técnico - HTML, CSS, PHP y JavaScript" />
+
+<!-- Twitter / X Cards -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Máster SEO Técnico | HTML, CSS, PHP y JS" />
+<meta name="twitter:description" content="Ejercicios y prácticas del Máster SEO Técnico: HTML, CSS, PHP y JavaScript. Desarrollo web orientado a SEO técnico y rendimiento." />
+<meta name="twitter:image" content="/imagenes/master-seo-gato.png" />
+<meta name="twitter:image:alt" content="Máster SEO Técnico - HTML, CSS, PHP y JavaScript" />
+
+<!-- Opcional: si tienes usuario de X -->
+<!-- <meta name="twitter:site" content="@tu_usuario" /> -->
+<!-- <meta name="twitter:creator" content="@tu_usuario" /> -->
+  
   </head>
  <body>
      <header>
