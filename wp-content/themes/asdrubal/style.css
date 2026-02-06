@@ -361,3 +361,61 @@ body {
     .hero-visuals { height: 400px; margin-top: 40px; transform: scale(0.8); }
     .gradient-text { font-size: 2.5rem; }
 }
+
+/* 1. EL PADRE: Es vital para que el submenú sepa dónde "anclarse" */
+.main-nav ul li.dropdown {
+    position: relative !important;
+    display: inline-block; /* Asegura que mantenga su sitio en la fila */
+}
+
+/* 2. EL CONTENIDO: Posicionamiento absoluto respecto al padre */
+.main-nav ul li.dropdown .dropdown-content {
+    display: none; /* Se cambia con JS */
+    position: absolute !important;
+    top: 100% !important; /* Justo debajo del texto NEW */
+    left: 0 !important;   /* Alineado a la izquierda del texto NEW */
+    background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 99999;
+    padding: 0;
+    margin: 0;
+    list-style: none !important;
+}
+
+/* 3. LOS HIJOS: Forzar que salgan uno debajo de otro */
+.main-nav ul li.dropdown .dropdown-content li {
+    display: block !important; /* Rompe la horizontalidad */
+    width: 100% !important;
+    float: none !important; /* Por si el tema usa floats */
+}
+
+.main-nav ul li.dropdown .dropdown-content li a {
+    display: block !important;
+    padding: 12px 15px !important;
+    color: #333 !important;
+    text-shadow: none; /* Limpia estilos de cabecera */
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+/* Clase activa para JS */
+.show-dropdown {
+    display: block !important;
+}
+
+/* Añade una flecha después del texto NEW */
+#new-menu-trigger::after {
+    content: " ▼"; /* Espacio + flecha hacia abajo */
+    font-size: 10px;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+/* Opcional: Rotar la flecha cuando el menú esté abierto */
+.show-dropdown ~ #new-menu-trigger::after {
+    transform: rotate(180deg);
+}
+

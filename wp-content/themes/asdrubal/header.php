@@ -21,16 +21,26 @@
             </div>
 
             <nav class="main-nav">
-                <ul>
-                    <li><a href="<?php echo home_url('/'); ?>">Inicio</a></li>
-                    <li><a href="<?php echo home_url('/sobre-nosotros'); ?>">Sobre Nosotros</a></li>
-                    <li><a href="<?php echo home_url('/sobre-mi'); ?>">Sobre Mi</a></li>
-                    <li><a href="<?php echo home_url('/articulo/category/seo/'); ?>">SEO</a></li> 
-                    <li><a href="<?php echo home_url('/articulo/category/sem/'); ?>">SEM</a></li>
-                    <li><a href="<?php echo home_url('/articulo/category/analitica-cro/'); ?>">CRO</a></li>
-                    <li><a href="<?php echo home_url('/nuevo'); ?>">new</a></li> 
-                    <li class="cta-button"><a href="<?php echo home_url('/contacto'); ?>">Contacto</a></li>
-                </ul>
+    <ul>
+        <li><a href="<?php echo home_url('/'); ?>">Inicio</a></li>
+        <li><a href="<?php echo home_url('/sobre-nosotros'); ?>">Sobre Nosotros</a></li>
+        <li><a href="<?php echo home_url('/sobre-mi'); ?>">Sobre Mi</a></li>
+        <li><a href="<?php echo home_url('/category/seo/'); ?>">SEO</a></li> 
+        <li><a href="<?php echo home_url('/category/sem/'); ?>">SEM</a></li>
+        <li><a href="<?php echo home_url('/category/analitica-cro/'); ?>">CRO</a></li>
+        
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" id="new-menu-trigger">new</a>
+            <ul class="dropdown-content" id="new-dropdown">
+                <li><a href="<?php echo home_url('/coches/opel-corsa-seriedad-alemana/'); ?>">Opel Corsa</a></li>
+                <li><a href="<?php echo home_url('/nuevo/sub-2'); ?>">Submenú 2</a></li>
+                <li><a href="<?php echo home_url('/nuevo/sub-3'); ?>">Submenú 3</a></li>
+            </ul>∫
+        </li>
+
+        <li class="cta-button"><a href="<?php echo home_url('/contacto'); ?>">Contacto</a></li>
+    </ul>
+</nav>
             </nav>
         </div>
     </header>
