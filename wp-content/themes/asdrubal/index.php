@@ -1,1 +1,0 @@
-esto es un index.php
