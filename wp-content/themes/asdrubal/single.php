@@ -2,10 +2,24 @@
 
 <h1><?php the_title(); ?></h1>
 
+<?php
+// Obtenemos el ID de la imagen destacada
+$post_image_id = get_post_thumbnail_id( get_the_ID() );
+
+if ( $post_image_id ) {
+    // Obtenemos la URL y el texto ALT (vital para SEO)
+    $img_src = wp_get_attachment_image_url( $post_image_id, 'large' );
+    $img_alt = get_post_meta( $post_image_id, '_wp_attachment_image_alt', true );
+
+    echo '<div class="contenedor-custom-fit">';
+    echo '<img src="' . esc_url( $img_src ) . '" alt="' . esc_attr( $img_alt ) . '" class="img-object-fit" loading="lazy">';
+    echo '</div>';
+}
+?>
+
 <div class="generico">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
                 <?php
             if ( in_category('coches')){
                 ?>
