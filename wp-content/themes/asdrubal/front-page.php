@@ -1,5 +1,22 @@
 <?php get_header(); ?>
 
+<?php
+// Forzamos el ID de la página donde SI sabemos que está la foto
+$post_id_manual = 17; // <--- PON AQUÍ EL ID DE TU PÁGINA DE INICIO
+$image_url = get_the_post_thumbnail_url($post_id_manual, 'full');
+
+if (!$image_url) {
+    $image_url = 'https://via.placeholder.com/1920x800'; 
+}
+?>
+
+<div class="banner-seo-tecnico" style="background-image: url('<?php echo esc_url($image_url); ?>');">
+    <div class="overlay">
+        <h1>¡Imagen cargada desde el Backend!</h1>
+        <p>Proyecto: <?php the_title(); ?></p>
+    </div>
+</div>
+
 <?php 
 // Busca en: /tu-tema/plantillas/display-posts/card-posts.php
 // Llamamos al archivo que tiene el Loop y la Query
