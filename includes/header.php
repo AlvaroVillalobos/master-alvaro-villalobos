@@ -39,8 +39,6 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
       </title>
      
      <link rel="preload" as="image" href="/imagenes/html5-cheatsheet.jpeg">
-     
-     <link rel="stylesheet" href="/css/estilo.css">
 
      <link rel="icon" type="image/x-icon" href="/imagenes/favicon-av.png">
      <link rel="icon" type="image/png" href="/imagenes/favicon-av.png">
@@ -95,8 +93,9 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
         <li><a href="/ejercicios/ejercicios-css">CSS</a></li>
         <li><a href="/ejercicios/ejercicios-php">PHP</a></li>
         <li><a href="/ejercicios/ejercicios-javascript">JavaScript</a></li>
-        <li><a href="/ejercicios/repaso-general">Repaso</a></li>
         <li><a href="/ejercicios/unica">Meta Etiquetas</a></li>
+        <li><a href="/ejercicios/ejercicios-url">URLs</a></li>
+        <li><a href="/ejercicios/repaso-general">Repaso</a></li>
     </ul>
 </li>
      </ul>

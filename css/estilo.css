@@ -91,11 +91,12 @@ nav > ul {
   background-color: #6c757d;
 }
 
-ul li a {
-    color: white; 
-    text-decoration: none; /* Quitamos el subrayado por defecto */
-    border-bottom: 2px solid #024893; /* Añade una línea azul debajo */
-    padding-bottom: 2px; /* Espacio entre el texto y la línea */
+nav > ul > li > a,
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #024893;
+    padding-bottom: 2px;
 }
 
 div#imagenfalsa {
@@ -372,8 +373,52 @@ li.dropdown {
 li.dropdown:hover .dropdown-content {
     display: block;
 }
-/* Forzar color negro en los enlaces de la zona de ejercicios */
-.contenedor-ejercicios ul li a {
-    color: black;
-    border-bottom-color: black; /* Para que la línea de subrayado también sea negra */
+
+/* SOLUCIÓN DEFINITIVA: Máxima especificidad sin !important */
+
+#main-content {
+    color: #1f2937;
+}
+
+.contenedor-ejercicios,
+.ejercicio-practico {
+    max-width: 900px;
+    padding: 20px;
+}
+
+.ejercicio-practico h2,
+.ejercicio-practico p,
+.ejercicio-practico li,
+.ejercicio-practico strong {
+    color: inherit;
+}
+
+.ejercicio-practico a {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.ejercicio-practico a:hover,
+.ejercicio-practico a:focus-visible {
+    color: #003d82;
+}
+
+.ejercicio-practico--destacado {
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.alerta-crawl {
+    background: #fff5f5;
+    border-left: 5px solid #ff0000;
+    padding: 15px;
+}
+
+.alerta-crawl p {
+    margin: 0 0 10px;
+}
+
+.alerta-crawl__link {
+    color: #b42318;
+    font-weight: 700;
 }
