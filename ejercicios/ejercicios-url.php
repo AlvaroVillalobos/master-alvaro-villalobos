@@ -67,6 +67,34 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
 </main>
 
+<p>
+    Vamos a ofuscar un enlace  
+    <span class="enl" 
+          onclick="location.href='https://carlos.sanchezdonate.com/articulo/como-ofuscar-enlaces/'" 
+          title="Aviso Legal" 
+          style="cursor:pointer; color:#0056b3; text-decoration:underline;">
+        siguiendo las indicaciones de
+    </span> 
+    Carlos Sánchez Donate y ofuscadas con onclick.
+</p>
+
+<hr>
+
+<p>
+    Accede al 
+    <span id="ofc" class="enl" style="cursor:pointer; color:#0056b3; text-decoration:underline;">
+        panel de control
+    </span> 
+    ofuscado con listener y UTM.
+</p>
+
+<script>
+document.getElementById('ofc').addEventListener('click', function() {
+    // Añadimos UTM para trackeo en Analytics sin que Googlebot lo rastree como enlace
+    window.location.href = 'https://carlos.sanchezdonate.com/?utm_source=footer&utm_medium=ofuscado';
+});
+</script>
+
 <div>
   <br>  
 <?php
