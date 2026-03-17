@@ -95,6 +95,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
         <li><a href="/ejercicios/ejercicios-javascript">JavaScript</a></li>
         <li><a href="/ejercicios/unica">Meta Etiquetas</a></li>
         <li><a href="/ejercicios/ejercicios-url">URLs</a></li>
+        <li><a href="/ejercicios/ejercicios-scroll-infinito">Scroll</a></li>
         <li><a href="/ejercicios/repaso-general">Repaso</a></li>
     </ul>
 </li>

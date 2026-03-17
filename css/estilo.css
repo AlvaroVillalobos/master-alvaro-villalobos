@@ -12,7 +12,7 @@
     height: 10mm;
 }
 
-.in {
+.in { 
     background: #ff00a2;
     width: 3.94in;
     height: 43.94px;
@@ -421,4 +421,107 @@ li.dropdown:hover .dropdown-content {
 .alerta-crawl__link {
     color: #b42318;
     font-weight: 700;
+}
+
+/* Ofuscación de enlaces*/
+
+.enl{
+cursor:pointer;
+color:blue;
+text-decoration: none;
+}
+
+/* =============================== */
+/* EJERCICIO SCROLL INFINITO URLs  */
+/* =============================== */
+
+.ejercicio-scroll-infinito {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+.subtitulo-ejercicio {
+    font-size: 1.05rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.caja-explicacion {
+    background: #f5f7fb;
+    border-left: 4px solid #1e73be;
+    padding: 18px 20px;
+    border-radius: 10px;
+    margin: 25px 0 30px;
+}
+
+.caja-explicacion p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.contenedor-tarjetas {
+    display: grid;
+    gap: 24px;
+}
+
+.bloque-pagina {
+    display: grid;
+    gap: 20px;
+    scroll-margin-top: 80px;
+}
+
+.tarjeta-scroll {
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-scroll:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-scroll h2 {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    color: #1f2937;
+}
+
+.tarjeta-scroll p {
+    margin: 0;
+    line-height: 1.7;
+    color: #333;
+}
+
+.tarjeta-scroll code {
+    background: #f1f1f1;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 0.95em;
+    color: #1f2937;
+}
+
+.etiqueta-pagina {
+    display: inline-block;
+    background: #1e73be;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 6px 10px;
+    border-radius: 999px;
+}
+
+.estado-carga {
+    text-align: center;
+    margin-top: 30px;
+    padding: 16px;
+    font-weight: 600;
+    color: #1e73be;
+    background: #eef6ff;
+    border-radius: 10px;
 }
