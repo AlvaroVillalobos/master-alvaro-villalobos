@@ -1,3 +1,66 @@
+# Máster SEO Técnico: Gemini (para Technical SEO Manager en Okdiario)
+
+# 1. Configuración para Yandex: Bloqueo total
+User-agent: Yandex
+Disallow: /
+
+# 2. Configuración para Google: Bloqueo de Black Friday (pero permitido para Google Ads)
+User-agent: Googlebot
+Disallow: /ofertas/blackfriday/
+
+User-agent: AdsBot-Google
+Allow: /ofertas/blackfriday/
+
+# 3. User-agent específico con Crawl-delay
+User-agent: jorobateflandersbot
+Crawl-delay: 31416
+
+# 4. Configuración General (Todos los Bots) y Reglas Específicas
 User-agent: *
-Disallow: /wp-admin/
-Allow: /wp-admin/admin-ajax.php
+
+# Bloqueo selectivo de scripts con parámetros específicos
+Disallow: /scripts/*?prescindible
+# Permitimos explícitamente el resto en esa carpeta
+Allow: /scripts/*.js
+Allow: /scripts/*.json
+
+# Reglas de la carpeta /nomeves/
+Disallow: /nomeves/
+Allow: /nomeves/cartagena/
+Allow: /nomeves/sources/*.css
+
+# --- CONFIGURACIÓN EXTENSA PARA JOOMLA ---
+# Bloqueos estándar de seguridad y arquitectura
+Disallow: /administrator/
+Disallow: /bin/
+Disallow: /cache/
+Disallow: /cli/
+Disallow: /components/
+Disallow: /includes/
+Disallow: /installation/
+Disallow: /language/
+Disallow: /layouts/
+Disallow: /libraries/
+Disallow: /logs/
+Disallow: /modules/
+Disallow: /plugins/
+Disallow: /tmp/
+
+# Permitir assets necesarios para el renderizado (SEO Friendly)
+Allow: /components/*.js
+Allow: /components/*.css
+Allow: /modules/*.js
+Allow: /modules/*.css
+Allow: /plugins/*.js
+Allow: /plugins/*.css
+Allow: /templates/*.js
+Allow: /templates/*.css
+
+# Bloqueo de URLs dinámicas de Joomla (Evitar contenido duplicado)
+Disallow: /*?font-size=
+Disallow: /*.pdf$
+Disallow: /*?tmpl=component
+Disallow: /*?type=raw
+
+# Sitemap
+Sitemap: https://example.com/sitemap.xml
