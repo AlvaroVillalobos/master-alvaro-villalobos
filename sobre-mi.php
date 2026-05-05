@@ -66,13 +66,18 @@
     <div id="imagenfalsa"> </div>
 
      <section class="video youtube">
-      <h2>Vídeo Youtube</h2>
-    <div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/n3x8DZ1G1V4?si=z8TxrVmz45-drx8h" title="YouTube video player" 
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    </section>
+  <h2>Vídeo Youtube</h2>
+  <div>
+    <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/vNX_YbzUquA" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
         <p>Este es un ejemplo de una página de contacto. What is Lorem Ipsum?
           <blockquote cite="https://www.linkedin.com/in/alvarovillalobos-seo/">
             Esto es una cita, por que estoy aprendiendo las etiquetas HTML. Por <cite>Álvaro Villalobos.</cite>

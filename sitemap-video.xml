@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>http://localhost:8888/sobre-mi</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/vNX_YbzUquA/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Información sobre Álvaro Villalobos: especialista SEO</video:title>
+      <video:description>Álvaro Villalobos nos habla sobre su trayectoria como especialista en SEO técnico en esta entrevista.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/vNX_YbzUquA</video:player_loc>
+    </video:video>
+  </url>
+</urlset>
