@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/1.1">
+  
+  <!-- Noticia 1: Publicada hace 1 hora -->
+  <url>
+    <loc>https://tu-web-de-prueba.com/ultima-hora-fichajes-verano-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Tu Web de Prueba</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-08T16:30:00+02:00</news:publication_date>
+      <news:title>Última hora: Los fichajes bomba confirmados para el verano 2026</news:title>
+    </news:news>
+  </url>
+
+  <!-- Noticia 2: Publicada hace 6 horas -->
+  <url>
+    <loc>https://tu-web-de-prueba.com/analisis-mercados-criptomonedas-mayo</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Tu Web de Prueba</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-08T11:15:00+02:00</news:publication_date>
+      <news:title>Análisis: ¿Por qué el mercado cripto se ha estabilizado este mayo?</news:title>
+    </news:news>
+  </url>
+
+  <!-- Noticia 3: Publicada ayer -->
+  <url>
+    <loc>https://tu-web-de-prueba.com/nuevas-medidas-fiscales-autonomos</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Tu Web de Prueba</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-07T09:00:00+02:00</news:publication_date>
+      <news:title>Guía completa sobre las nuevas medidas fiscales para autónomos en 2026</news:title>
+    </news:news>
+  </url>
+
+  <!-- Noticia 4: Publicada hace 40 horas (Cerca del límite de purga) -->
+  <url>
+    <loc>https://tu-web-de-prueba.com/descubrimiento-arqueologico-egipto-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Tu Web de Prueba</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T23:45:00+02:00</news:publication_date>
+      <news:title>Hallan una tumba inédita en Luxor: el descubrimiento del año</news:title>
+    </news:news>
+  </url>
+
+</urlset>
