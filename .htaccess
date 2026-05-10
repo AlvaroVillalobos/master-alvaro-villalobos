@@ -13,9 +13,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
 
-RedirectMatch 404 ^/wp-sitemap.xml$
-
-# RedirectMatch 404 ^/wp-sitemap-users-1.xml$
-# RedirectMatch 404 ^/articulo/category/sin-categoria/$
-
 # END WordPress

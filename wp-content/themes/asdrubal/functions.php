@@ -1,8 +1,17 @@
 <?php
-// Nota los dos guiones bajos en __DIR__
-$plantillas = __DIR__ . '/plantillas/'; 
-?>
+/**
+ * Functions.php - Máster SEO Técnico
+ */
 
-<?php
-// Activamos el soporte para imágenes destacadas
+// 1. Definición de rutas
+$plantillas = __DIR__ . '/plantillas/'; 
+
+// 2. Activamos el soporte para imágenes destacadas
 add_theme_support( 'post-thumbnails' );
+
+// 3. Borrar Sitemap nativo de WP para evitar conflictos con nuestro Sitemap de News
+add_filter( 'wp_sitemaps_enabled', '__return_false' );
+
+if ( has_action( 'init', 'wp_sitemaps_get_server' ) ) {
+    remove_action( 'init', 'wp_sitemaps_get_server' );
+}
