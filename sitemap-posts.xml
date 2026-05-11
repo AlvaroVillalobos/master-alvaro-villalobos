@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:8888/coches/opel-corsa-seriedad-alemana/</loc>
+    <lastmod>2026-02-05</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:8888/coches/seat-ibiza-una-leyenda-economica/</loc>
+    <lastmod>2026-01-29</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:8888/coches/peugeot-208-perfecto-para-ciudad/</loc>
+    <lastmod>2026-01-29</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:8888/seo/guia-core-web-vitals/</loc>
+    <lastmod>2026-01-29</lastmod>
+  </url>
+</urlset>
