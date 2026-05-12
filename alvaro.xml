@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://localhost:8888/generador-de-sitemap/</loc>
+    <lastmod>2026-05-10</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:8888/coches/opel-corsa-seriedad-alemana/</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-05-12</lastmod>
   </url>
   <url>
     <loc>http://localhost:8888/coches/seat-ibiza-una-leyenda-economica/</loc>
@@ -11,6 +15,10 @@
   <url>
     <loc>http://localhost:8888/coches/peugeot-208-perfecto-para-ciudad/</loc>
     <lastmod>2026-01-29</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:8888/nuevo/</loc>
+    <lastmod>2026-01-28</lastmod>
   </url>
   <url>
     <loc>http://localhost:8888/analitica-cro/diferencias-ga4-ua/</loc>
@@ -25,28 +33,12 @@
     <lastmod>2026-01-29</lastmod>
   </url>
   <url>
-    <loc>http://localhost:8888/sem/post-de-prueba-1/</loc>
-    <lastmod>2026-01-23</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:8888/sem/esto-es-un-post/</loc>
-    <lastmod>2026-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:8888/sem/hola-mundo/</loc>
-    <lastmod>2026-01-23</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:8888/generador-de-sitemap/</loc>
-    <lastmod>2026-05-10</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:8888/nuevo/</loc>
-    <lastmod>2026-01-28</lastmod>
-  </url>
-  <url>
     <loc>http://localhost:8888/sobre-mi/</loc>
     <lastmod>2026-01-22</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:8888/sem/post-de-prueba-1/</loc>
+    <lastmod>2026-01-23</lastmod>
   </url>
   <url>
     <loc>http://localhost:8888/contacto/</loc>
@@ -61,6 +53,10 @@
     <lastmod>2026-02-06</lastmod>
   </url>
   <url>
+    <loc>http://localhost:8888/sem/esto-es-un-post/</loc>
+    <lastmod>2026-01-20</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:8888/dinero/</loc>
     <lastmod>2026-01-20</lastmod>
   </url>
@@ -71,5 +67,9 @@
   <url>
     <loc>http://localhost:8888/pagina-ejemplo/</loc>
     <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:8888/sem/hola-mundo/</loc>
+    <lastmod>2026-01-23</lastmod>
   </url>
 </urlset>

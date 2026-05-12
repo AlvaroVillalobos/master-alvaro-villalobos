@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>http://localhost:8888/coches/opel-corsa-seriedad-alemana/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Web básica</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-12T18:28:01+02:00</news:publication_date>
+      <news:title>Opel Corsa seriedad alemana</news:title>
+    </news:news>
+  </url>
+</urlset>
